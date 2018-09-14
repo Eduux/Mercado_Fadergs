@@ -1,0 +1,8 @@
+br/com/fadergs/mercado/produto/persistence/repo/ProdutoRepository.class
+br/com/fadergs/mercado/produto/persistence/specification/ProdutoSpecBuilder.class
+br/com/fadergs/mercado/produto/persistence/model/Produto.class
+br/com/fadergs/mercado/produto/Application.class
+br/com/fadergs/mercado/produto/controller/ProdutoController.class
+br/com/fadergs/mercado/produto/persistence/specification/ProdutoSpecification.class
+br/com/fadergs/mercado/produto/security/SecurityConfig.class
+br/com/fadergs/mercado/produto/persistence/specification/SearchCriteria.class

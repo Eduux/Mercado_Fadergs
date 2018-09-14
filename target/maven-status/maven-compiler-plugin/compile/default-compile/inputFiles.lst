@@ -1,0 +1,8 @@
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/persistence/model/Produto.java
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/persistence/specification/ProdutoSpecification.java
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/security/SecurityConfig.java
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/persistence/repo/ProdutoRepository.java
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/Application.java
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/controller/ProdutoController.java
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/persistence/specification/SearchCriteria.java
+/Applications/projetos/Mercado/api-produto/src/main/java/br/com/fadergs/mercado/produto/persistence/specification/ProdutoSpecBuilder.java
