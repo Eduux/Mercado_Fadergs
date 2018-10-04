@@ -65,6 +65,8 @@ public class ProdutoController {
         return ResponseEntity.created(uri).build();
     }
 
+
+
     @DeleteMapping("/produto/{id}")
     public ResponseEntity<Object> deleteProduto(@PathVariable Integer id) {
 
@@ -88,94 +90,16 @@ public class ProdutoController {
       return new ResponseEntity<>(HttpStatus.NO_CONTENT); 
     }
 
-    /*
-     * @GetMapping("/organizacoes") public ResponseEntity<Object>
-     * findAllOrganizacoes(@RequestParam(value = "search") String search, Pageable
-     * pageable) {
-     * 
-     * OrganizacaoSpecBuilder builder = new OrganizacaoSpecBuilder(); Pattern
-     * pattern = Pattern.compile("(\\w.+?)(:|<|>)(\\w+?),",
-     * Pattern.UNICODE_CHARACTER_CLASS); Matcher matcher = pattern.matcher(search +
-     * ","); while (matcher.find()) { builder.with(matcher.group(1),
-     * matcher.group(2), matcher.group(3)); }
-     * 
-     * Specification<Organizacao> spec = builder.build();
-     * 
-     * Page<Organizacao> organizacoes = organizacaoRepository.findAll(spec,
-     * pageable); if (organizacoes == null ||
-     * organizacoes.spliterator().getExactSizeIfKnown() == 0) { return new
-     * ResponseEntity<>(HttpStatus.NO_CONTENT); } return new
-     * ResponseEntity<>(organizacoes, HttpStatus.OK); }
-     * 
-     * 
-     * @GetMapping("/tipoOrganizacao/{id}") public ResponseEntity<Object>
-     * findOneTipoOrganizacao(@PathVariable Integer id) {
-     * 
-     * if (!tipoOrganizacaoRepository.existsById(id)) { return new
-     * ResponseEntity<>(HttpStatus.NOT_FOUND); } return new
-     * ResponseEntity<>(tipoOrganizacaoRepository.findById(id), HttpStatus.OK); }
-     * 
-     * @GetMapping("/organizacao/{id}") public ResponseEntity<Object>
-     * findOneOrganizacao(@PathVariable Integer id) {
-     * 
-     * if (!organizacaoRepository.existsById(id)) { return new
-     * ResponseEntity<>(HttpStatus.NOT_FOUND); } return new
-     * ResponseEntity<>(organizacaoRepository.findById(id), HttpStatus.OK); }
-     * 
-     * 
-     * 
-     * @PostMapping("/organizacao") public ResponseEntity<Object>
-     * create(@RequestBody Organizacao organizacao) {
-     * 
-     * organizacao.setDataCriacao(new Date()); organizacao.setDataAlteracao(new
-     * Date());
-     * 
-     * organizacaoRepository.save(organizacao);
-     * 
-     * URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentRequestUri()
-     * .path("/") .path(organizacao.getId().toString()) .toUriString());
-     * 
-     * return ResponseEntity.created(uri).build(); }
-     * 
-     *
-     * 
-     * 
-     * @DeleteMapping("/organizacao/{id}") public ResponseEntity<Object>
-     * deleteOrganizacao(@PathVariable Integer id) {
-     * 
-     * if (!organizacaoRepository.existsById(id)) { return new
-     * ResponseEntity<>(HttpStatus.NOT_FOUND); }
-     * organizacaoRepository.deleteById(id); return new
-     * ResponseEntity<>(HttpStatus.NO_CONTENT); }
-     */
 
-    /*
-     * @PutMapping("/tipoOrganizacao/{id}") public ResponseEntity<Object>
-     * update(@RequestBody TipoOrganizacao tipoOrganizacao, @PathVariable Integer
-     * id) {
-     * 
-     * if (!tipoOrganizacaoRepository.existsById(id)) { return new
-     * ResponseEntity<>(HttpStatus.NOT_FOUND); }
-     * tipoOrganizacaoRepository.save(merge(tipoOrganizacao, id)); return new
-     * ResponseEntity<>(HttpStatus.NO_CONTENT); }
-     */
+    // @GetMapping("/produto/{id}")
+    // public ResponseEntity<Object> findVendas(@PathVariable Integer id) {
 
-    /*
-     * private TipoOrganizacao merge (TipoOrganizacao tipoOrganizacao, Integer id) {
-     * 
-     * TipoOrganizacao tipoOrganizacaoToUpdate =
-     * tipoOrganizacaoRepository.getOne(id);
-     * 
-     * tipoOrganizacaoToUpdate.setDataAlteracao(new Date());
-     * tipoOrganizacaoToUpdate.setDataCriacao(tipoOrganizacaoToUpdate.getDataCriacao
-     * () != null ? tipoOrganizacaoToUpdate.getDataCriacao() : new Date());
-     * tipoOrganizacaoToUpdate.setNome(tipoOrganizacao.getNome() != null ?
-     * tipoOrganizacao.getNome() : tipoOrganizacaoToUpdate.getNome());
-     * tipoOrganizacaoToUpdate.setId(tipoOrganizacaoToUpdate.getId() != null ?
-     * tipoOrganizacaoToUpdate.getId() : null);
-     * tipoOrganizacaoToUpdate.setUsuario(tipoOrganizacao.getUsuario() != null ?
-     * tipoOrganizacao.getUsuario() : tipoOrganizacaoToUpdate.getUsuario());
-     * 
-     * return tipoOrganizacaoToUpdate; }
-     */
+    //     Produto produto = new Produto();
+    //     produto = produtoRepository.getOne(id);
+    //     if (produto == null) {
+    //         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    //     }
+    //     return new ResponseEntity<>(produto, HttpStatus.OK);
+    // }
+
 }

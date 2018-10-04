@@ -33,8 +33,14 @@ public class Produto {
 	@Column(name = "valor", nullable = false)
 	private Double valor;
 
-	@Column(name = "estoque", nullable = false)
-	private Integer estoque;
+	@Column(name = "estoque_entrada", nullable = false)
+	private Integer estoque_entrada;
+	
+	@Column(name = "vendas", nullable = false)
+	private Integer vendas;
+
+	@Column(name = "estoque_loja", nullable = false)
+	private Integer estoque_loja;
 
 	/**
 	 * @return the id
@@ -95,15 +101,46 @@ public class Produto {
 	/**
 	 * @return the estoque
 	 */
-	public Integer getEstoque() {
-		return estoque;
+	public Integer getEstoque_entrada() {
+		return estoque_entrada;
+	}
+
+	/**
+	 * @param estoque_entrada the estoque_entrada to set
+	 */
+	public void setEstoque_entrada(Integer estoque_entrada) {
+		this.estoque_entrada = estoque_entrada;
+	}
+
+	/**
+	 * @return the estoque_loja
+	 */
+	public Integer getEstoque_loja() {
+		return estoque_loja;
+	}
+
+
+	/**
+	 * @param estoque_loja the estoque_loja to set
+	 */
+	public void setEstoque_loja(Integer estoque_loja) {
+		this.estoque_loja = estoque_loja;
 	}
 	
+
 	/**
-	 * @param estoque the estoque to set
+	 * @return the vendas
 	 */
-	public void setEstoque(Integer estoque) {
-		this.estoque = estoque;
+	public Integer getVendas() {
+		return vendas;
+	}
+
+
+	/**
+	 * @param vendas the vendas to set
+	 */
+	public void setVendas(Integer vendas) {
+		this.vendas = vendas;
 	}
 
 }
